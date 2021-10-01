@@ -5,7 +5,7 @@
 - [1.2 EC2](#12-ec2)
 - [1.3 S3](#13-s3)
 - [1.4 Route53](#14-route53) 
-
+- [1.5 Encryption](#15-encryption)
 
 
 ## 1.1 Cloud Services 
@@ -71,6 +71,8 @@ Multipart upload
 - breaking data into parts 
 - min data size of 100Mb
 
+S3 transfer acceleration 
+- bucket-level feature that enables fast and easy secure file transfers over long distances 
 
 
 
@@ -116,4 +118,9 @@ Multipart upload
 - allows you to register domains (Domain Name System Service)
 - globally resilient and global service
 
+## 1.5 Encryption
+Encryption at rest
+- data  stored in an encrypted form
 
+Encryption in transit 
+- protecting data while it is being transfered
