@@ -4,8 +4,7 @@
 - [1.1 Cloud Services](#11-cloud-services)
 - [1.2 EC2](#12-ec2)
 - [1.3 S3](#13-s3)
-- [1.4 Route53](#14-route53) 
-- [1.5 Encryption](#15-encryption)
+
 
 
 ## 1.1 Cloud Services 
@@ -74,14 +73,30 @@ Multipart upload
 S3 transfer acceleration 
 - bucket-level feature that enables fast and easy secure file transfers over long distances 
 
+## 1.4 S3 Object Storage Types 
+**S3 Standard**
+- frequently accessed data that is not repacable
+- 200 code maens data stored urably 
 
+**S3 Standard-IA**
+- infrequently access, long-live,data that is important or irrepacable
 
+**S3 Intelligent Tiering**
+- autmoatically moves data to most cost effective 
 
+**S3 One Zone IA**
+- data that is not accessed frequently and not critical 
 
+**S3 Glacier**
+- data archival, secure , durable , low  cost
+- minimum 90 days 
+- cold objects: aren't immediately availablee 
+- 1-5 min,3-5 hr retrieval process,5 -12 hours
+- less time = more expensive retrieival cost 
 
-
-
-
+**S3 Glacier Deep Dive**
+- long-term data archival
+- min 180 days
 
 
 
@@ -102,7 +117,7 @@ S3 transfer acceleration
 **Domain Name Sever (DNS)**
 - 13 DNS root servers
 - EX: when connecting to website (host to IP)
-- discovery service-translate machine into human
+- **discovery service-translate machine into human**
 - A-host to IPV4
 - AAAA-host name to ipv6
 -	CNAME-host to host cannot point to IP
@@ -114,13 +129,29 @@ S3 transfer acceleration
 
 **Fault tolerant**- system that allows failure and can operate without interruptions
 
-## 1.4 Route53
+## 1.5 Route53
 - allows you to register domains (Domain Name System Service)
 - globally resilient and global service
 
-## 1.5 Encryption
+## 1.6 Encryption
 Encryption at rest
 - data  stored in an encrypted form
 
 Encryption in transit 
 - protecting data while it is being transfered
+
+## 1.7 KMS
+Key management service 
+- **Provides FIPS 140 -2**
+
+CMK
+
+customer Master Key
+- **can be used for up to 4kb of data**
+
+DEK
+
+Data Encryption Key 
+- works on>4KB
+- KMS does not store DEK
+
