@@ -54,6 +54,40 @@ Bucket
 - If you need anonymous or cross account access.
 - **enabled bucket can never be switch backed to disables**
 
+Versioning
+- allow bucket to satore multiple versions of objects 
+- objects aren't deleted deletion markers are put in place to hide objects 
+- can ony be suspended
+
+MFADelete 
+- required to delete versions
+- required to change bucket versioning state
+
+Single PUT Upload 
+- single data stream to s3
+- stream fails =upload fails
+
+Multipart upload 
+- breaking data into parts 
+- min data size of 100Mb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 **Cloud Formation (infrastructure as a Code)**
 - uses a template to create AWS Infrastructure 
 - uses YAML or JSON
@@ -77,15 +111,9 @@ Bucket
 **High Availability**-system that maximizes uptime
 
 **Fault tolerant**- system that allows failure and can operate without interruptions
+
 ## 1.4 Route53
-- allows you to register domains
+- allows you to register domains (Domain Name System Service)
 - globally resilient and global service
 
-Versioning
-- allow bucket to satore multiple versions of objects 
-- objects aren't deleted deletion markers are put in place to hide objects 
-- can ony be suspended
 
-MFADelete 
-- required to delete versions
-- required to change bucket versioning state
