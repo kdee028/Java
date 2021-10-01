@@ -1,10 +1,11 @@
 # AWS-SAA-Cantril
 >These are my notes from Cantril's course SAA(CO2)
 
-- [1.1 Cloud Services]
-- [1.2 EC2]
-- [1.3 S3]
-- [1.4 Route 53]
+- [1.1 Cloud Services](#11-cloud-services)
+- [1.2 EC2](#12-ec2)
+- [1.3 S3](#13-s3)
+- [1.4 Route53](#14-route53) 
+
 
 
 ## 1.1 Cloud Services 
@@ -28,7 +29,7 @@
 - do not use default VPC
 - one subnet in each AZ
 
-## 1.2 EC2(Elastic Cloud Compute)
+## 1.2 EC2
 - IAAS
 - Private by Default
 - provides access to virtual machines know as instances 
@@ -37,10 +38,21 @@
 **AMI (Amazon Machine Image)**
 - server image used to create virtual machines
 
-## 1.3 Simple Storage Service(S3)
+## 1.3 S3
 - object storage object size rang 0 to 5TB
 - object stored in bucket
 - **bucket name has to be globally unique**
+
+Identity
+- Controlling high mix of different resources.
+- Not every service supports resource policies.
+- Want to manage permissions all in one place, use IAM.
+- Must have access to all accounts accessing the information.
+
+Bucket
+- Managing permissions on a specific product.
+- If you need anonymous or cross account access.
+- **enabled bucket can never be switch backed to disables**
 
 **Cloud Formation (infrastructure as a Code)**
 - uses a template to create AWS Infrastructure 
@@ -63,7 +75,17 @@
 -	NS- delegates control of .org to the .org registry
 
 **High Availability**-system that maximizes uptime
+
 **Fault tolerant**- system that allows failure and can operate without interruptions
-## 1.4 Route 53
+## 1.4 Route53
 - allows you to register domains
 - globally resilient and global service
+
+Versioning
+- allow bucket to satore multiple versions of objects 
+- objects aren't deleted deletion markers are put in place to hide objects 
+- can ony be suspended
+
+MFADelete 
+- required to delete versions
+- required to change bucket versioning state
