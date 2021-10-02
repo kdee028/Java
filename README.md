@@ -1,157 +1,51 @@
 # AWS-SAA-Cantril
 >These are my notes from Cantril's course SAA(CO2)
 
-- [1.1 Cloud Services](#11-cloud-services)
-- [1.2 EC2](#12-ec2)
-- [1.3 S3](#13-s3)
+- [1.1 Availability Zones](#11-availability-zones)
+- [1.2 IAM](#12-iam)
+- [1.3 AWS ACCESS](#13-aws-access)
+- [1.4 AWS KMS](#14-aws-kms)
 
 
+## 1.1 Availability Zones
+Region
+- physical locations with clusters of data centers
 
-## 1.1 Cloud Services 
-1.	Infrastructure as a Service -vendor manages, pay per sec or min 
-2.	Software as a Service-you consume Ex: Netflix
-3.	Platform as a Service (PaaS) you manage app and data, vendor mange everything else
-4.	On-premises-individual manages all components 
-5.	Data center hosting-place equipment, you pat for facility
+Availability Zones 
+- discrete data center 
+- AZs in a region are usually 3, min is 2 and max is 6
 
-- Public Cloud=1 AWS public cloud
-- Private Cloud=using on-premises real cloud
-- Multi-Cloud=more than 1 public cloud
-- Hybrid Cloud=using public and private in on environment 
-  - this is **not** public and legacy on premises 
+## 1.2 IAM
+Identity  and Access management
+- users:mapped to physical user 
+- groups:can have one or more users
 
-- **Region**-area with full AWS deployment
-- **edge locations**- local distribution points 
+Least Principle Priviledge
 
-**VPC (Virtual Private Cloud)**-virtual network inside AWS
-- one default VPC per region can have many customs 
-- do not use default VPC
-- one subnet in each AZ
+Policies: JSon documents that **allow or deny** permissions
 
-## 1.2 EC2
-- IAAS
-- Private by Default
-- provides access to virtual machines know as instances 
-- only have no charges when terminated
+IAM Permission Boundaries
+- defines max allowed permissions
 
-**AMI (Amazon Machine Image)**
-- server image used to create virtual machines
+AWS Certificate Manager(ACM)
+- manages SSl/TLS certificates
+**SSL and TLS enable traffic between the client and the Load Balancer 
 
-## 1.3 S3
-- object storage object size rang 0 to 5TB
-- object stored in bucket
-- **bucket name has to be globally unique**
+IAM Certficate Store 
+- where 3rd party SSL/TCL certs are uploaded
+## 1.3 AWS ACCESS
+- AWS Management Console
+- AWS CLI or SDK
+- AWS CLoudshell:CLI tool from browser
 
-Identity
-- Controlling high mix of different resources.
-- Not every service supports resource policies.
-- Want to manage permissions all in one place, use IAM.
-- Must have access to all accounts accessing the information.
+**NON-IAM Users**
+- STS(Security Token Service): Up to 1hr of access
 
-Bucket
-- Managing permissions on a specific product.
-- If you need anonymous or cross account access.
-- **enabled bucket can never be switch backed to disables**
+## 1.4 AWS KMS
+Key Management Service 
 
-Versioning
-- allow bucket to satore multiple versions of objects 
-- objects aren't deleted deletion markers are put in place to hide objects 
-- can ony be suspended
-
-MFADelete 
-- required to delete versions
-- required to change bucket versioning state
-
-Single PUT Upload 
-- single data stream to s3
-- stream fails =upload fails
-
-Multipart upload 
-- breaking data into parts 
-- min data size of 100Mb
-
-S3 transfer acceleration 
-- bucket-level feature that enables fast and easy secure file transfers over long distances 
-
-## 1.4 S3 Object Storage Types 
-**S3 Standard**
-- frequently accessed data that is not repacable
-- 200 code maens data stored urably 
-
-**S3 Standard-IA**
-- infrequently access, long-live,data that is important or irrepacable
-
-**S3 Intelligent Tiering**
-- autmoatically moves data to most cost effective 
-
-**S3 One Zone IA**
-- data that is not accessed frequently and not critical 
-
-**S3 Glacier**
-- data archival, secure , durable , low  cost
-- minimum 90 days 
-- cold objects: aren't immediately availablee 
-- 1-5 min,3-5 hr retrieval process,5 -12 hours
-- less time = more expensive retrieival cost 
-
-**S3 Glacier Deep Dive**
-- long-term data archival
-- min 180 days
+##1.5 AWS Shield
+Disributed Denial of Service(DDoS) protection
 
 
-
-
-
-
-
-
-**Cloud Formation (infrastructure as a Code)**
-- uses a template to create AWS Infrastructure 
-- uses YAML or JSON
-- only required is the resource section
-- Description must directly follow template format version
-  - Cloud Watch
-    - Monitoring of Metrics
-- CloudTrail: who accessed and when they accessed 
-
-**Domain Name Sever (DNS)**
-- 13 DNS root servers
-- EX: when connecting to website (host to IP)
-- **discovery service-translate machine into human**
-- A-host to IPV4
-- AAAA-host name to ipv6
--	CNAME-host to host cannot point to IP
-- TXT-to prove domain ownership
--	MX-how emails are sent 
--	NS- delegates control of .org to the .org registry
-
-**High Availability**-system that maximizes uptime
-
-**Fault tolerant**- system that allows failure and can operate without interruptions
-
-## 1.5 Route53
-- allows you to register domains (Domain Name System Service)
-- globally resilient and global service
-
-## 1.6 Encryption
-Encryption at rest
-- data  stored in an encrypted form
-
-Encryption in transit 
-- protecting data while it is being transfered
-
-## 1.7 KMS
-Key management service 
-- **Provides FIPS 140 -2**
-
-CMK
-
-customer Master Key
-- **can be used for up to 4kb of data**
-
-DEK
-
-Data Encryption Key 
-- works on>4KB
-- KMS does not store DEK
 
