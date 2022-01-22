@@ -13,7 +13,7 @@ Syntax Analysis
 ## 3 stages: Frontend, Middle, Backend ##
 ### Compiler Front End ###
 - performs syntax Checking using **Lexical analyzer** and **parser**
-###lexer### - separates the input code text into recognizable language called tokens
+**Lexer** - separates the input code text into recognizable language called tokens
 
 **Syntax analyzer(parser)** - performs syntax rules checking construst a **symbol table** and **abstract syntax tree**
 1. Symbol table:constructed by the execution of the **parcer** and **lexer**
