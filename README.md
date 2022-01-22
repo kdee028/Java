@@ -39,12 +39,13 @@ Syntax Analysis
  
 1.   **Data path:**  - Performs arithmetic operations
 -  ALU is apart of the Data path module  
+
 2. ALU : operates on one or more numerical valves to perform calculations
 
 3. Realization: made by same company, different machine language
 
 
--  **Control unit:** - Control flow of data and ALU 
+-  **Control unit:** - Control flow of information around the processor 
 
 
 **Memory Module** : stores instructions & data
@@ -53,6 +54,9 @@ Syntax Analysis
 1. **Input Modules** : takes input & writes then to memory
 2. **output Modules** : Reads data from memory & delivers off-chip or system
 
+- Register:  Stoves a small # of pieces of info commonly the temporary results  calculations
+
+-  Bus: carries data between the ALU, memory & peripherals
 
 
 1.Instructions - a command or " word" of machine language
