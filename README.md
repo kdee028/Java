@@ -32,8 +32,8 @@ Syntax Analysis
 - **Linkers** :combines partial programs & Libraries into a single executable
 - **Assembler** : translates assembly language code into machine
   
- ###    1.2  Cpu
-###CPU Central processing unit ###
+ ## 1.2  Cpu
+### CPU Central processing unit ###
 - controls the entire system &  o perations
  ** Data path: **  - Performs arithmetic operations
 ** Control unit:** - Control flow of data and ALU
