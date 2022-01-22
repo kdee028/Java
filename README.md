@@ -32,11 +32,19 @@ Syntax Analysis
 - **Linkers** :combines partial programs & Libraries into a single executable
 - **Assembler** : translates assembly language code into machine
   
+  
  ## 1.2  Cpu
 ### CPU Central processing unit ###
 - controls the entire system & operations
--  ** Data path: **  - Performs arithmetic operations
--  ** Control unit:** - Control flow of data and ALU
+ 
+1.   ** Data path: **  - Performs arithmetic operations
+-  ALU is apart of the Data path module  
+2. ALU : operates on one or more numerical valves to perform calculations
+
+3. Realization: made by same company, different machine language
+
+
+-  * Control unit:** - Control flow of data and ALU
 
 ** Memory Module ** : stores instructions & data
 
