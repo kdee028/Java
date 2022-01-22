@@ -34,9 +34,9 @@ Syntax Analysis
   
  ## 1.2  Cpu
 ### CPU Central processing unit ###
-- controls the entire system &  o perations
- ** Data path: **  - Performs arithmetic operations
-** Control unit:** - Control flow of data and ALU
+- controls the entire system & operations
+-  ** Data path: **  - Performs arithmetic operations
+-  ** Control unit:** - Control flow of data and ALU
 
 ** Memory Module ** : stores instructions & data
 
