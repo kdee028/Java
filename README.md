@@ -2,7 +2,7 @@
 > Computer organization & Assembly Language programming
 
 - [1.1 Compilers](#11-Compilers)
-_ [1.2 CPU](#12-Cpu)
+-  [1.2 CPU](#12-Cpu)
 
 ## 1.1 Compilers
 Compilers
@@ -33,24 +33,25 @@ Syntax Analysis
 - **Assembler** : translates assembly language code into machine
   
   
- ## 1.2  Cpu
+##  1.2  Cpu
 ### CPU Central processing unit ###
 - controls the entire system & operations
  
-1.   ** Data path: **  - Performs arithmetic operations
+1.   **Data path:**  - Performs arithmetic operations
 -  ALU is apart of the Data path module  
 2. ALU : operates on one or more numerical valves to perform calculations
 
 3. Realization: made by same company, different machine language
 
 
--  * Control unit:** - Control flow of data and ALU
+-  **Control unit:** - Control flow of data and ALU 
 
-** Memory Module ** : stores instructions & data
 
-** peripherals: **
-1. ** Input Modules ** : takes input & writes then to memory
-2. ** output Modules ** : Reads data from memory & delivers off-chip or system
+**Memory Module** : stores instructions & data
+
+**peripherals:**
+1. **Input Modules** : takes input & writes then to memory
+2. **output Modules** : Reads data from memory & delivers off-chip or system
 
 
 
