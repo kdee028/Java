@@ -5,6 +5,12 @@
 
 
 ## 1.1 Compilers
- 
-program that translates a high level programming language into executable code 
+Compilers
+- program that translates a high level programming language into executable code 
+
+Syntax Analysis 
+- performs Syntax rules checking and constructs a symbol table and syntax tree
+### 3 stages: Frontend, Middle, Backend ###
+## Compiler Front End ##
+- performs"
 
