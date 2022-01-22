@@ -66,3 +66,35 @@ Syntax Analysis
 
 
 
+## 1.3 Executing a Program
+
+
+-clockcycles = instructions xcycles
+-clockcycles x cycle period = time to execute
+-executiontime= clockcycles /frequency
+- Cycle Period: 1/ Frequency
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
