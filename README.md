@@ -29,5 +29,5 @@ Syntax Analysis
 
 ### Compiler Backend ###
 - Arranges the symbol table in memory & generates final executable machine code
-**Linkers** :combines partial programs & Libraries into a single executable
-**Assembler** : translates assembly language code into machine
+- **Linkers** :combines partial programs & Libraries into a single executable
+- **Assembler** : translates assembly language code into machine
