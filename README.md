@@ -1,8 +1,10 @@
-# AWS-SAA-Cantril
->These are my notes from Stephane Mareek
+# CSE 230
+>These are my notes
 
-- [1.1 IAM Roles](#11-iam-roles)
+- [1.1 Compilers](#11-Compilers)
 
 
-## 1.1 IAM Roles 
-Users or Groups can be assigned JSON documents called policies 
+## 1.1 Compilers
+ 
+program that translates a high level programming language into executable code 
+
