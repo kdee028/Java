@@ -42,7 +42,7 @@ x += 5;
 String txt = "Hello";
 System.out.println(txt.length());
 
-# to convert the value of txt to uppercase #
+# To convert the value of txt to uppercase #
 String txt = "Hello";
 System.out.println(
 txt.toUpperCase()
