@@ -1,6 +1,7 @@
 # Java
 > learning to program with JAVA
-[1.1 First line of Code](1.1 First-line-of-code)
+
+[1.1 First line of Code](#1.1first-line-of-code)
 ## 1.1 First line of Code ##
 
 public class Main {
