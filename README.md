@@ -1,91 +1,24 @@
-# CSE 230
-> Computer organization & Assembly Language programming
+# Java
+> learning to program with JAVA
+[1.1 First line of Code](1.1 First-line-of-code)
+## 1.1 First line of Code ##
 
-- [1.1 Compilers](#11-Compilers)
--  [1.2 CPU](#12-Cpu)
-
-## 1.1 Compilers
-Compilers
-- program that translates a high level programming language into executable code 
-
-Syntax Analysis 
-- performs Syntax rules checking and constructs a symbol table and syntax tree
-## 3 stages: Frontend, Middle, Backend ##
-### Compiler Front End ###
-- performs syntax Checking using **Lexical analyzer** and **parser**
-**Lexer** - separates the input code text into recognizable language called tokens
-
-**Syntax analyzer(parser)** - performs syntax rules checking construst a **symbol table** and **abstract syntax tree**
-1. Symbol table:constructed by the execution of the **parcer** and **lexer**
-- tracks the scope of the symbols in the program
-2. Abstract Syntax Tree: output of the frontend
-- intermediate representation of the program
-
-### Compiler Middle-Stage ###
-- performs analysis & optimization of the program
-- this stage looks for common patterns that can be reorganized
-- this stage also may delete unused variables or operations
-- often results in smaller executables with higher performance
-
-### Compiler Backend ###
-- Arranges the symbol table in memory & generates final executable machine code
-- **Linkers** :combines partial programs & Libraries into a single executable
-- **Assembler** : translates assembly language code into machine
-  
-  
-##  1.2  Cpu
-### CPU Central processing unit ###
-- controls the entire system & operations
- 
-1.   **Data path:**  - Performs arithmetic operations
--  ALU is apart of the Data path module  
-
-2. ALU : operates on one or more numerical valves to perform calculations
-
-3. Realization: made by same company, different machine language
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+    System.out.println("my name is ");
+  }
+}
+- the code above prints out         Hello World
+                                    my name is
 
 
--  **Control unit:** - Control flow of information around the processor 
+ ## 1.2 Comments in JAVA ##
+ - // This will create a single line comment ??
+ - /* This is a multi line comment */
 
 
-**Memory Module** : stores instructions & data
-
-**peripherals:**
-1. **Input Modules** : takes input & writes then to memory
-2. **output Modules** : Reads data from memory & delivers off-chip or system
-
-- Register:  Stoves a small # of pieces of info commonly the temporary results  calculations
-
--  Bus: carries data between the ALU, memory & peripherals
-
-
-1.Instructions - a command or " word" of machine language
-- Instruction set : a machine lANGUAGe
-- Instruction Class: a subset of instructions that share common features
-- Instruction Count : the number of instructions  in a particular program
-
-
-
-## 1.3 Executing a Program
-
-
-- clockcycles = instructions xcycles
-- clockcycles x cycle period = time to execute
-- executiontime = clockcycles /frequency
-- Cycle Period: 1/ Frequency
- 
-
-
-
-
-
-
-
-
-
-
-
-
+## 1.3 Variables in Java 
 
 
 
